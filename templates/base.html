@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    {% if title %}
+    <title>{{ title }}</title>
+    {% else %}
+    <title>条码二维码识别</title>
+    {% endif %}
+</head>
+
+<body>
+<div style="width: 500px;height: 500px;margin: auto;position: absolute;top: 0;bottom: 0;left: 0;right: 0">
+    {% block body %}{% endblock %}
+</div>
+</body>
+
+
+</html>

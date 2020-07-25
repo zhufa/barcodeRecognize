@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block body %}
+    <form method="get" action="/">
+        {% if errortype %}
+            <label>{{ errortype }}</label>
+            <input type="submit" value="<<返回"/>
+        {% else %}
+            <label>条码二维码图片预览：</label>
+            <br/>
+            <img src="static/upload/{{ img_src }}"/>
+            <br/>
+            <label>类型：{{ codetype }}</label>
+            <br/>
+            <label>识别结果：{{ result }}</label>
+            <input type="submit" value="<<返回"/>
+        {% endif %}
+    </form>
+{% endblock %}

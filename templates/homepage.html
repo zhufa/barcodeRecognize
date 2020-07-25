@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+{% block body %}
+    <form method="post" action="/result" enctype="multipart/form-data">
+        上传条码二维码文件：<input type="file" name="upload_file"/>
+        <input type="submit" value="识别"/>
+    </form>
+{% endblock %}
